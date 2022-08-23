@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi totam ex sit illo iusto, maiores quos fugit deserunt beatae. Et ducimus, deleniti voluptate blanditiis harum excepturi esse doloremque aut rerum inventore sunt magnam? Reprehenderit natus sunt odit? Dignissimos doloremque, asperiores, ad cumque delectus nobis perferendis obcaecati deleniti tempora quisquam doloribus exercitationem praesentium saepe beatae porro vero omnis nam excepturi nulla minus repellendus! Facilis exercitationem, ex ad dolore deleniti, obcaecati odio expedita magnam delectus animi odit eveniet consectetur doloribus possimus reiciendis aliquam assumenda quod alias vel ut earum reprehenderit quisquam hic. Quis ad suscipit, quibusdam numquam illo in ut eius exercitationem!</p>
+    <!--
+        SEGURANÇA EM IFRAME'S
+
+        No exemplo abaixo é utilizado a propriedade "SANDBOX" com o valor definido com SANDBOX para criar uma espécie de camada de proteção no iframe impossibilitando que informações de um formulário sejam enviadas por exemplo.
+
+        Já com o atributo "referrerpolicy", definindo o valor como NO-REFERRER, estaremos bloqueado que o site que está sendo utilizando dentro do Iframe colete qualquer tipo de informação do nosso site.
+    
+    -->
+
+    <iframe src="paginas_extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae, nemo officiis excepturi eos, asperiores nulla alias, illo amet praesentium cumque voluptas quam? Ea atque eius animi mollitia qui modi!</p>
+</body>
+</html>
