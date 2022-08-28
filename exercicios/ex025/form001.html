@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+
+    <!--
+        DIFERENÇA NAME vs ID
+         
+        Name - É muito mais útil quando está sendo trabalhado com HTML e PHP
+
+        ID - É muito mais útil quando está sendo trabalhado com JavaScript
+    -->
+
+    <!--
+        TAG LABEL
+
+        É extremamente importante o uso da tag Label dentro de formulários, pois é através dela que o SEO do Google e também linguagens de programação possam entender que o "nome de um campo" está relacionado/ligado ao seu respectivo input.
+
+        Dentro da tag Label temos apenas um atributo (for = ""), dentro do for usaremos o nome que está DENTRO da tag ID para criar uma relação entre o nome e o input.
+    -->
+
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
