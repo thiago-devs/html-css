@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="iMasc" value="M" checked> <label for="iMasc">Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="iFem" value="F"> <label for="iFem">Feminino</label>
+
+            <!-- 
+                Input Radio
+            Para evitar possíveis erros nesse tipo de input, DEVEMOS usar o mesmo nome no atributo "NAME". Com isso será possível escolher APENAS 1 das opções.
+            -->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="esFut" id="iFut"> <label for="iFut">Futebol</label> <br>
+            <input type="checkbox" name="esVol" id="iVol"> <label for="iVol">Vôlei</label> <br>
+            <input type="checkbox" name="esNat" id="iNat"> <label for="iNat">Natação</label> <br>
+            <input type="checkbox" name="esBasq" id="iBasq"> <label for="iBasq">Basquete</label> <br>
+            <input type="checkbox" name="esTen" id="iTen"> <label for="iTen">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
